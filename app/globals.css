@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 230, 255, 238;
+  --background-end-rgb: 255, 255, 255;
+
+  /* Define custom colors */
+  --foso-green: #00a651;
+  --foso-lightgreen: #7ccfa8;
+  --foso-blue: #1f69ff;
+  --foso-lightblue: #d4f4ff;
+  --foso-background: #e6ffee;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    )
+    fixed;
+}
+
+@layer components {
+  .nav-link {
+    @apply hover:text-foso-green transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-foso-green text-white py-2 px-4 rounded-full hover:bg-opacity-90 transition-all;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-foso-green border border-foso-green py-2 px-4 rounded-full hover:bg-foso-green hover:text-white transition-all;
+  }
+}
