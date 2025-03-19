@@ -1,6 +1,6 @@
 import Breadcrumb from '@/components/Breadcrumb';
+import FeaturedCard from '@/components/FeaturedCard';
 import FeedbackReaction from '@/components/FeedbackReaction';
-import PromoSection from '@/components/PromoSection';
 import RelatedPosts from '@/components/RelatedPosts';
 import ShareIcons from '@/components/ShareIcons';
 import TableOfContents from '@/components/TableOfContents';
@@ -14,13 +14,12 @@ const breadcrumbItems = [
 ];
 
 export default function ProductPage() {
-
   return (
     <main className="min-h-screen">
       <Breadcrumb items={breadcrumbItems} />
       <div className="container mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          <div className='col-2 mt-14'>
+          <div className="col-2 mt-14">
             <ShareIcons />
           </div>
           <div className="gap-6 lg:col-span-6">
@@ -470,7 +469,40 @@ export default function ProductPage() {
           <div className="lg:col-span-4">
             <TableOfContents />
             <div className="mt-8">
-              <PromoSection />
+              <FeaturedCard
+                title="Miễn phí dùng thử"
+                ctaLabel="Trải Nghiệm Ngay"
+                ctaUrl="/demo"
+                image1={{
+                  src: '/laptop.png',
+                  alt: 'Laptop',
+                  width: 400,
+                  height: 150,
+                }}
+                image2={{
+                  src: '/robot.png',
+                  alt: 'Robot',
+                  width: 200,
+                  height: 200,
+                }}
+                image3={{
+                  src: '/mrp.png',
+                  alt: 'MRP',
+                  width: 200,
+                  height: 200,
+                }}
+              />
+              <FeaturedCard
+                title="Gia nhập cộng đồng FMRP Việt – Kết nối, chia sẻ, cùng phát triển!"
+                ctaLabel="Trải Nghiệm Ngay"
+                ctaUrl="/demo"
+                image1={{
+                  src: '/screen2.png',
+                  alt: 'Screen',
+                  width: 400,
+                  height: 650,
+                }}
+              />
             </div>
           </div>
         </div>

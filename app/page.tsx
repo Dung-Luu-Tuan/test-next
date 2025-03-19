@@ -1,11 +1,12 @@
-"use client";
+'use client';
 
-import BlogHero from "@/components/BlogHero";
-import BlogList from "@/components/BlogList";
-import Breadcrumb from "@/components/Breadcrumb";
-import Pagination from "@/components/Pagination";
-import PromoSection from "@/components/PromoSection";
-import SearchSection from "@/components/SearchSection";
+import BlogHero from '@/components/BlogHero';
+import BlogList from '@/components/BlogList';
+import Breadcrumb from '@/components/Breadcrumb';
+import Pagination from '@/components/Pagination';
+import PromoSection from '@/components/FeaturedCard';
+import SearchSection from '@/components/SearchSection';
+import FeaturedCard from '@/components/FeaturedCard';
 
 export default function BlogPage({
   searchParams,
@@ -17,9 +18,9 @@ export default function BlogPage({
   const totalPages = 10; // Example total pages
 
   const breadcrumbItems = [
-    { label: "Trang chủ", href: "/", isLast: false },
-    { label: "Tài nguyên", href: "/resources", isLast: false },
-    { label: "Blog", href: "/blog", isLast: true },
+    { label: 'Trang chủ', href: '/', isLast: false },
+    { label: 'Tài nguyên', href: '/resources', isLast: false },
+    { label: 'Blog', href: '/blog', isLast: true },
   ];
 
   return (
@@ -35,7 +36,40 @@ export default function BlogPage({
           <div className="lg:col-span-4">
             <SearchSection />
             <div className="mt-8">
-              <PromoSection />
+              <FeaturedCard
+                title="Miễn phí dùng thử"
+                ctaLabel="Trải Nghiệm Ngay"
+                ctaUrl="/demo"
+                image1={{
+                  src: '/laptop.png',
+                  alt: 'Laptop',
+                  width: 400,
+                  height: 150,
+                }}
+                image2={{
+                  src: '/robot.png',
+                  alt: 'Robot',
+                  width: 200,
+                  height: 200,
+                }}
+                image3={{
+                  src: '/mrp.png',
+                  alt: 'MRP',
+                  width: 200,
+                  height: 200,
+                }}
+              />
+              <FeaturedCard
+                title="Gia nhập cộng đồng FMRP Việt – Kết nối, chia sẻ, cùng phát triển!"
+                ctaLabel="Trải Nghiệm Ngay"
+                ctaUrl="/demo"
+                image1={{
+                  src: '/screen2.png',
+                  alt: 'Screen',
+                  width: 400,
+                  height: 650,
+                }}
+              />
             </div>
           </div>
         </div>

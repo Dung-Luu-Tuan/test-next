@@ -12,7 +12,7 @@ const Header = (props: Props) => {
   return (
     <header className="py-4 bg-transparent">
       <div className="container mx-auto px-4 flex items-center justify-center">
-        <div className="w-full max-w-screen-xl bg-white rounded-full shadow-lg flex items-center justify-between px-[150px] py-3">
+        <div className="w-full max-w-screen-xl bg-white rounded-full shadow-lg flex items-center justify-between px-[150px] py-1">
           <Link href="/" className="flex items-center py-3">
             <Image src="/logo.png" alt="Logo" width={135} height={55} />
           </Link>
