@@ -18,7 +18,7 @@ const BlogList = (props: Props) => {
       imageUrl: "/bom.png",
       category: "Cộng đồng",
       ctaLabel: "Tham Gia Ngay",
-      ctaUrl: "/join",
+      ctaUrl: "/product",
       type: "featured",
     },
     {
@@ -29,7 +29,7 @@ const BlogList = (props: Props) => {
       date: "17/11/2022",
       readTime: "10 phút đọc",
       ctaLabel: "Khám phá thêm",
-      ctaUrl: "/blog/bom-management",
+      ctaUrl: "/product",
       type: "regular",
     },
     {
@@ -40,7 +40,7 @@ const BlogList = (props: Props) => {
       date: "17/11/2022",
       readTime: "10 phút đọc",
       ctaLabel: "Khám phá thêm",
-      ctaUrl: "/blog/bom-importance",
+      ctaUrl: "/product",
       type: "regular",
     },
     {
@@ -51,7 +51,7 @@ const BlogList = (props: Props) => {
       date: "17/11/2022",
       readTime: "10 phút đọc",
       ctaLabel: "Khám phá thêm",
-      ctaUrl: "/blog/bom-importance",
+      ctaUrl: "/product",
       type: "regular",
     },
     {
@@ -62,7 +62,7 @@ const BlogList = (props: Props) => {
       date: "17/11/2022",
       readTime: "10 phút đọc",
       ctaLabel: "Khám phá thêm",
-      ctaUrl: "/blog/bom-importance",
+      ctaUrl: "/product",
       type: "regular",
     },
     {
@@ -73,7 +73,7 @@ const BlogList = (props: Props) => {
       date: "17/11/2022",
       readTime: "10 phút đọc",
       ctaLabel: "Khám phá thêm",
-      ctaUrl: "/blog/bom-importance",
+      ctaUrl: "/product",
       type: "regular",
     },
     {
@@ -84,7 +84,7 @@ const BlogList = (props: Props) => {
       date: "17/11/2022",
       readTime: "10 phút đọc",
       ctaLabel: "Khám phá thêm",
-      ctaUrl: "/blog/bom-importance",
+      ctaUrl: "/product",
       type: "regular",
     },
   ];

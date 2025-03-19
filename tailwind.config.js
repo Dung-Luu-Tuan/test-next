@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         "foso-green": "#00A651",
+        "foso-title-green": "#15AA7A",
         "foso-lightgreen": "#7CCFA8",
         "foso-green2": "#53B086",
         "foso-blue": "#1F69FF",

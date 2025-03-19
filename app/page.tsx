@@ -1,10 +1,11 @@
-import Breadcrumb from "@/components/Breadcrumb";
-import Header from "@/components/Header";
+"use client";
+
 import BlogHero from "@/components/BlogHero";
 import BlogList from "@/components/BlogList";
-import SearchSection from "@/components/SearchSection";
-import PromoSection from "@/components/PromoSection";
+import Breadcrumb from "@/components/Breadcrumb";
 import Pagination from "@/components/Pagination";
+import PromoSection from "@/components/PromoSection";
+import SearchSection from "@/components/SearchSection";
 
 export default function BlogPage({
   searchParams,

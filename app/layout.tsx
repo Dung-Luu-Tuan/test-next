@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import CornerBackground from "@/components/CornerBackground";
 
 export const metadata: Metadata = {
   title: "FOSO Blog - Cập Nhật Tin Tức Mới Nhất",
@@ -15,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className="font-sans">
+      <body className="relative font-sans">
+        <CornerBackground />
         <Header />
         {children}
       </body>
